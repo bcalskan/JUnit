@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class AssertionsTask {
+public class Q8_AssertionsTask {
     WebDriver driver;
 
     @Before

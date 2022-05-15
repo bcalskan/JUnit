@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class BeforeAfterTest {
+public class Q7_BeforeAfterTest {
 
     static WebDriver driver;
 

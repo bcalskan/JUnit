@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Q03 {
+public class Q3 {
 
     /*
     1. http://zero.webappsecurity.com sayfasina gidin

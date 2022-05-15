@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Checkbox {
+public class Q6_Checkbox {
     //1. Bir class oluşturun : CheckBoxTest
     //2.Gerekli yapiyi olusturun ve aşağıdaki görevi tamamlayın.
     //a. Verilen web sayfasına gidin.

@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class RadioButton {
+public class Q5_RadioButton {
     //1. Bir class oluşturun : RadioButtonTest
     //2. Gerekli yapiyi olusturun ve aşağıdaki görevi tamamlayın.
     //-https://www.facebook.com adresine gidin
