@@ -56,12 +56,18 @@ public class Q8_AutomationExercise7 {
         //6. The products list is visible
         Assert.assertTrue("The products list test FAILED", driver.findElement(By.xpath("//*[text()='Category']")).isDisplayed());
 
-
         //7. Click on 'View Product' of first product
+        Assert.assertTrue("View Product test FAILED",driver.findElement(By.xpath("(//*[text()='View Product'])[1]")).isDisplayed());
 
         //8. User is landed to product detail page
+        driver.findElement(By.xpath("(//*[text()='View Product'])[1]")).click();
 
         //9. Verify that detail detail is visible: product name, category, price, availability, condition, brand
+        Assert.assertTrue("Name test FAILED",driver.findElement(By.xpath("//*[text()='Blue Top']")).isDisplayed());
+        Assert.assertTrue("Category test FAILED",driver.findElement(By.xpath("//*[text()='Category: Women > Tops']")).isDisplayed());
+        Assert.assertTrue("Availability test FAILED",driver.findElement(By.xpath("//*[text()='Availability:']")).isDisplayed());
+        Assert.assertTrue("Condition test FAILED",driver.findElement(By.xpath("//*[text()=' New']")).isDisplayed());
+        Assert.assertTrue("Brand test FAILED",driver.findElement(By.xpath("//*[text()=' Polo']")).isDisplayed());
 
     }
 }
