@@ -12,16 +12,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Q8_AutomationExercise7 {
+public class Q9_AutomationExercise9 {
     //1. Launch browser
     //2. Navigate to url 'http://automationexercise.com'
     //3. Verify that home page is visible successfully
     //4. Click on 'Products' button
     //5. Verify user is navigated to ALL PRODUCTS page successfully
-    //6. The products list is visible
-    //7. Click on 'View Product' of first product
-    //8. User is landed to product detail page
-    //9. Verify that detail detail is visible: product name, category, price, availability, condition, brand
+    //6. Enter product name in search input and click search button
+    //7. Verify 'SEARCHED PRODUCTS' is visible
+    //8. Verify all the products related to search are visible
+
     WebDriver driver;
 
     @Before
@@ -34,11 +34,11 @@ public class Q8_AutomationExercise7 {
 
     @After
     public void after() {
-        driver.close();
+        //driver.close();
     }
 
     @Test
-    public void task5() {
+    public void task9() {
         //1. Launch browser
         //2. Navigate to url 'http://automationexercise.com'
         driver.get("http://automationexercise.com");
@@ -53,21 +53,15 @@ public class Q8_AutomationExercise7 {
         //5. Verify user is navigated to ALL PRODUCTS page successfully
         Assert.assertTrue("ALL PRODUCTS test FAILED", driver.findElement(By.xpath("//*[text()='All Products']")).isDisplayed());
 
-        //6. The products list is visible
-        Assert.assertTrue("The products list test FAILED", driver.findElement(By.xpath("//*[text()='Category']")).isDisplayed());
+        //6. Enter product name in search input and click search button
+        String productName = "Blue Top";
+        driver.findElement(By.xpath("//input[@name='search']")).sendKeys(productName);
+        driver.findElement(By.xpath("//button[@type='button']")).click();
 
-        //7. Click on 'View Product' of first product
-        Assert.assertTrue("View Product test FAILED",driver.findElement(By.xpath("(//*[text()='View Product'])[1]")).isDisplayed());
+        //7. Verify 'SEARCHED PRODUCTS' is visible
+        Assert.assertTrue("Searched products is not visible", driver.findElement(By.xpath("//*[text()='Searched Products']")).isDisplayed());
 
-        //8. User is landed to product detail page
-        driver.findElement(By.xpath("(//*[text()='View Product'])[1]")).click();
-
-        //9. Verify that detail detail is visible: product name, category, price, availability, condition, brand
-        Assert.assertTrue("Name test FAILED",driver.findElement(By.xpath("//*[text()='Blue Top']")).isDisplayed());
-        Assert.assertTrue("Category test FAILED",driver.findElement(By.xpath("//*[text()='Category: Women > Tops']")).isDisplayed());
-        Assert.assertTrue("Availability test FAILED",driver.findElement(By.xpath("//*[text()='Availability:']")).isDisplayed());
-        Assert.assertTrue("Condition test FAILED",driver.findElement(By.xpath("//*[text()=' New']")).isDisplayed());
-        Assert.assertTrue("Brand test FAILED",driver.findElement(By.xpath("//*[text()=' Polo']")).isDisplayed());
+        //8. Verify all the products related to search are visible
 
     }
 }

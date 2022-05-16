@@ -12,12 +12,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Q7_AutomationExercise7 {
+public class Q10_AutomationExercise10 {
     //1. Launch browser
     //2. Navigate to url 'http://automationexercise.com'
     //3. Verify that home page is visible successfully
-    //4. Click on 'Test Cases' button
-    //5. Verify user is navigated to test cases page successfully
+    //4. Scroll down to footer
+    //5. Verify text 'SUBSCRIPTION'
+    //6. Enter email address in input and click arrow button
+    //7. Verify success message 'You have been successfully subscribed!' is visible
 
     WebDriver driver;
 
@@ -31,11 +33,11 @@ public class Q7_AutomationExercise7 {
 
     @After
     public void after() {
-        driver.close();
+        //driver.close();
     }
 
     @Test
-    public void task7() {
+    public void task10() {
         //1. Launch browser
         //2. Navigate to url 'http://automationexercise.com'
         driver.get("http://automationexercise.com");
@@ -44,14 +46,10 @@ public class Q7_AutomationExercise7 {
         WebElement homePage = driver.findElement(By.xpath("//*[text()=' Home']"));
         Assert.assertTrue("Homepage isn´t displayed.", homePage.isDisplayed());
 
-        //4. Click on 'Test Cases' button
-        driver.findElement(By.xpath("(//*[text()='Test Cases'])[1]")).click();
-
-        //5. Verify user is navigated to test cases page successfully
-        WebElement testCases = driver.findElement(By.xpath("//*[text()='Test Cases']"));
-        Assert.assertTrue("Test cases test FAILED",testCases.isDisplayed());
-
+        //4. Scroll down to footer
+        //5. Verify text 'SUBSCRIPTION'
+        //6. Enter email address in input and click arrow button
+        //7. Verify success message 'You have been successfully subscribed!' is visible
 
     }
-
-}
+    }
