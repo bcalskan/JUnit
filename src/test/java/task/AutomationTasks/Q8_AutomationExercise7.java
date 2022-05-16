@@ -34,7 +34,7 @@ public class Q8_AutomationExercise7 {
 
     @After
     public void after() {
-        //driver.close();
+        driver.close();
     }
 
     @Test
