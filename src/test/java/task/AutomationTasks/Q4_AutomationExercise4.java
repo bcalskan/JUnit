@@ -1,4 +1,4 @@
-package task;
+package task.AutomationTasks;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Q10_AutomationExercise2 {
+public class Q4_AutomationExercise4 {
     //1. Launch browser
     //2. Navigate to url 'http://automationexercise.com'
     //3. Verify that home page is visible successfully
@@ -21,9 +21,8 @@ public class Q10_AutomationExercise2 {
     //6. Enter correct email address and password
     //7. Click 'login' button
     //8. Verify that 'Logged in as username' is visible
-    //9. Click 'Delete Account' button
-    //10. Verify that 'ACCOUNT DELETED!' is visible
-
+    //9. Click 'Logout' button
+    //10. Verify that user is navigated to login page
     WebDriver driver;
 
     @Before
@@ -36,18 +35,16 @@ public class Q10_AutomationExercise2 {
 
     @After
     public void after() {
-//        driver.close();
+        driver.close();
     }
 
     @Test
-    public void task2() {
+    public void task4() {
         //1. Launch browser
         //2. Navigate to url 'http://automationexercise.com'
         driver.get("http://automationexercise.com");
 
         //3. Verify that home page is visible successfully
-        //System.out.println(driver.findElement(By.xpath("//*[text()=' Home']")).isDisplayed() ?
-        //                "Home page PASSED" : "Home page FAILED");
         WebElement homePage = driver.findElement(By.xpath("//*[text()=' Home']"));
         Assert.assertTrue("Homepage isn´t displayed.", homePage.isDisplayed());
 
@@ -57,8 +54,6 @@ public class Q10_AutomationExercise2 {
         //5. Verify 'Login to your account' is visible
         WebElement loginTo = driver.findElement(By.xpath("//*[text()='Login to your account']"));
         Assert.assertTrue("LoginTo isn´t displayed.", loginTo.isDisplayed());
-        //Assert.assertFalse("LoginTo isn´t displayed.",loginTo.isDisplayed());
-        // --> Eger yazinin sayfada görülmedigini biliyorsak assertFalse kullanabiliriz
 
         //6. Enter correct email address and password
         String email = "denemedd@gmail.com";
@@ -73,14 +68,12 @@ public class Q10_AutomationExercise2 {
         WebElement loggedInAs = driver.findElement(By.xpath("//*[text()=' Logged in as ']"));
         Assert.assertTrue("Logged in as is not displayed", loggedInAs.isDisplayed());
 
-        //9. Click 'Delete Account' button
-        WebElement deleteAcc = driver.findElement(By.xpath("//*[text()=' Delete Account']"));
-        deleteAcc.click();
+        //9. Click 'Logout' button
+        driver.findElement(By.xpath("//i[@class='fa fa-lock']")).click();
 
-        //10. Verify that 'ACCOUNT DELETED!' is visible
-        WebElement text = driver.findElement(By.xpath("(//*[text()='Delete Account'])[2]"));
-        String expectedText = "ACCOUNT DELETED";
-        //Assert.assertEquals("ACCOUNT DELETED bulunamadi",text.getText(),expectedText); -->  "Process finished with exit code -1" verir
-        Assert.assertFalse(text.getText().contains(expectedText)); // sonuc false oldugu icin kod calisir ve "Process finished with exit code 0" verir.
+        //10. Verify that user is navigated to login page
+        WebElement signUp = driver.findElement(By.xpath("//*[text()=' Signup / Login']"));
+        Assert.assertTrue("Sign up is not displayed", signUp.isDisplayed());
+
     }
 }

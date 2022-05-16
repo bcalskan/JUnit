@@ -1,4 +1,4 @@
-package task;
+package task.AutomationTasks;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Q9_AutomationExercise1 {
+public class Q1_AutomationExercise1 {
     WebDriver driver;
 
     @Before
