@@ -27,7 +27,7 @@ public class C02_HandleWindows {
 
     @After
     public void after() {
-        //driver.quit();
+        driver.quit();
     }
 
     @Test
@@ -65,6 +65,12 @@ public class C02_HandleWindows {
 
         // 8- logonun göründügünü test et
         Assert.assertTrue(driver.findElement(By.xpath("(//img[@class='logo'])[1]")).isDisplayed());
+
+        /*
+        driver.close() en son hangi penceredeysek sadece o sayfayi kapatir
+        driver.quit() bütün hepsini kapatir
+        driver.getWindowHandles(); acik olan bütün pencerelerin handle degerini getirir
+         */
     }
 
 }
