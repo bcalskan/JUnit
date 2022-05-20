@@ -77,6 +77,10 @@ public class C04_IFrame {
 //        Assert.assertTrue(linkYaziElementi.isDisplayed());
 //        System.out.println(linkYaziElementi.getText());
 
+
+        // findElements(By.tagName("iframe") deyip bir liste atabilirsin
+
+
     }
 
 
