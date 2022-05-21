@@ -14,6 +14,15 @@
     </properties>
 
     <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+
         <!-- eklenecek tüm dependencyler dependencies taginin icine eklenmelidir aks takdirde proje calismaz-->
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
