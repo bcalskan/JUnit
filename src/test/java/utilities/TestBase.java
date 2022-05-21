@@ -14,15 +14,15 @@ public abstract class TestBase {
     protected WebDriver driver;
 
     @Before
-    public void before(){
-    WebDriverManager.chromedriver().setup();
-    driver = new ChromeDriver();
-    driver.manage().window().maximize();
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+    public void before() {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
 
     @After
-    public void after(){
-      // driver.quit();
+    public void after() {
+        //driver.quit();
     }
 }
