@@ -5,9 +5,9 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utilities.TestBase;
+import utilities.TestBaseImplicitly;
 
-public class Actions3 extends TestBase {
+public class Actions3 extends TestBaseImplicitly {
 
     @Test
     public void name() {

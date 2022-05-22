@@ -6,9 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utilities.TestBase;
+import utilities.TestBaseImplicitly;
 
-public class C02_Actions extends TestBase {
+public class C02_Actions extends TestBaseImplicitly {
     @Test
     public void test01() throws InterruptedException {
         //1- Bir Class olusturalim KeyboardActions2

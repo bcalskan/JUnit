@@ -5,11 +5,10 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
-import utilities.TestBase;
+import utilities.TestBaseImplicitly;
 
-public class KeyboardActions2 extends TestBase {
+public class KeyboardActions2 extends TestBaseImplicitly {
     // 1- facebook´a git
     // 2- yeni kayit olustur click
     // 3- isim kutusunu locate et

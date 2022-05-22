@@ -3,12 +3,12 @@ package day11_faker_file;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import utilities.TestBase;
+import utilities.TestBaseImplicitly;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class C04_FileDownload extends TestBase {
+public class C04_FileDownload extends TestBaseImplicitly {
     //1- asagidaki testi yap
     //      -https://the-internet.herokuapp.com/download adresine git
     //      -dummy.txt dosyasini indir

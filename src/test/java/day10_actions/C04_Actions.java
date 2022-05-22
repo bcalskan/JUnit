@@ -5,9 +5,9 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utilities.TestBase;
+import utilities.TestBaseImplicitly;
 
-public class C04_Actions extends TestBase {
+public class C04_Actions extends TestBaseImplicitly {
     //Yeni bir class olusturalim: MouseActions2
     //1- https://demoqa.com/droppable adresine gidelim
     //2- “Drag me” butonunu tutup “Drop here” kutusunun ustune birakalim

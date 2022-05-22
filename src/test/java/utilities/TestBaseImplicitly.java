@@ -6,9 +6,7 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.Duration;
-
-public abstract class TestBase {
+public abstract class TestBaseImplicitly {
     //abstract yapma sebebi bu classtan obje üretilmesinin önüne gecmektir
 
     protected WebDriver driver;
@@ -18,7 +16,7 @@ public abstract class TestBase {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
 
     @After

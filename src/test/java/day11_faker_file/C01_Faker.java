@@ -6,9 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utilities.TestBase;
+import utilities.TestBaseImplicitly;
 
-public class C01_Faker extends TestBase {
+public class C01_Faker extends TestBaseImplicitly {
 
 
     @Test

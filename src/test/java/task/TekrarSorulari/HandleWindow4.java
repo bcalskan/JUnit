@@ -3,9 +3,9 @@ package task.TekrarSorulari;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WindowType;
-import utilities.TestBase;
+import utilities.TestBaseImplicitly;
 
-public class HandleWindow4 extends TestBase {
+public class HandleWindow4 extends TestBaseImplicitly {
 
     @Test
     public void name() {

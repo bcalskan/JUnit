@@ -4,14 +4,12 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WindowType;
 import org.openqa.selenium.interactions.Actions;
-import utilities.TestBase;
-import utilities.WindowHandlesSet;
+import utilities.TestBaseImplicitly;
 
 import java.util.Set;
 
-public class C03_Actions extends TestBase {
+public class C03_Actions extends TestBaseImplicitly {
     @Test
     public void test01() {
         //1- Yeni bir class olusturalim: MouseActions1

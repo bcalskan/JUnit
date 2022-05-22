@@ -6,11 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
-import utilities.TestBase;
+import utilities.TestBaseImplicitly;
 
-import java.util.Set;
-
-public class HandleWindow2 extends TestBase {
+public class HandleWindow2 extends TestBaseImplicitly {
     @Test
     public void name() {
         // 1- amazon anasayfaya gidelim

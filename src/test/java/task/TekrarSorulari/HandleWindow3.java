@@ -4,12 +4,12 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utilities.TestBase;
+import utilities.TestBaseImplicitly;
 
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class HandleWindow3 extends TestBase {
+public class HandleWindow3 extends TestBaseImplicitly {
 
     @Test
     public void name() {

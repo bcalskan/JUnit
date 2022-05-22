@@ -3,9 +3,9 @@ package task.Questions2;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utilities.TestBase;
+import utilities.TestBaseImplicitly;
 
-public class Q3 extends TestBase {
+public class Q3 extends TestBaseImplicitly {
     //1. Bir class oluşturun : RadioButtonTest
     //2. Gerekli yapiyi olusturun ve aşağıdaki görevi tamamlayın.
     //- https://www.facebook.com adresine gidin

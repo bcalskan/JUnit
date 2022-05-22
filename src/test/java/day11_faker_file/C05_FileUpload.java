@@ -4,9 +4,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utilities.TestBase;
+import utilities.TestBaseImplicitly;
 
-public class C05_FileUpload extends TestBase {
+public class C05_FileUpload extends TestBaseImplicitly {
     @Test
     public void name() {
         // https://the-internet.herokuapp.com/upload adresine git

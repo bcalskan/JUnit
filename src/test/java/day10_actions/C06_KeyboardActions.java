@@ -5,9 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utilities.TestBase;
+import utilities.TestBaseImplicitly;
 
-public class C06_KeyboardActions extends TestBase {
+public class C06_KeyboardActions extends TestBaseImplicitly {
 
     @Test
     public void test01() throws InterruptedException {

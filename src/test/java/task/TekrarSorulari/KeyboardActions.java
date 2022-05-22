@@ -5,9 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utilities.TestBase;
+import utilities.TestBaseImplicitly;
 
-public class KeyboardActions extends TestBase {
+public class KeyboardActions extends TestBaseImplicitly {
 
     @Test
     public void name() {

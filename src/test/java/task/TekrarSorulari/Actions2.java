@@ -5,12 +5,11 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utilities.TestBase;
-import utilities.WindowHandlesSet;
+import utilities.TestBaseImplicitly;
 
 import java.util.Set;
 
-public class Actions2 extends TestBase {
+public class Actions2 extends TestBaseImplicitly {
 
     @Test
     public void name() {

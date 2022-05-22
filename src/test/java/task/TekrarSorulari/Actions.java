@@ -3,9 +3,9 @@ package task.TekrarSorulari;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utilities.TestBase;
+import utilities.TestBaseImplicitly;
 
-public class Actions extends TestBase {
+public class Actions extends TestBaseImplicitly {
 
     @Test
     public void test01() {
