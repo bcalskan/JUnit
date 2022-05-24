@@ -21,11 +21,13 @@ public class C02_WebTables extends TestBase {
         //          ○ Tüm table body’sinin boyutunu(sutun sayisi) bulun. /tbody
         List<WebElement> sutunBasliklariListesi = driver.findElements(By.xpath("//thead//tr[1]//th"));
         System.out.println("Sutun Sayisi : " + sutunBasliklariListesi.size());
+
         //          ○ Table’daki tum body’I ve başlıkları(headers) konsolda yazdırın.
         // Tum body'i bir String olarak yazdirmak isterseniz
         // body webElementini locate edip, getText() method'u ile yazdirabilirsiniz
         WebElement tumBody = driver.findElement(By.xpath("//tbody"));
         System.out.println(tumBody.getText());
+
         //● printRows( ) metodu oluşturun //tr
         //          ○ table body’sinde bulunan toplam satir(row) sayısını bulun.
         List<WebElement> satirlarListesi = driver.findElements(By.xpath("//tbody//tr"));
