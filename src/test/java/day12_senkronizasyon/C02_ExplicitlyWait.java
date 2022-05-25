@@ -14,7 +14,7 @@ public class C02_ExplicitlyWait extends TestBaseImplicitly {
 
     @Test
     public void name() {
-        // 1. Bir class olusturun : EnableTest
+        //1. Bir class olusturun : EnableTest
         //2. Bir metod olusturun : isEnabled()
         //3. https://the-internet.herokuapp.com/dynamic_controls adresine gidin.
         //4. Textbox’in etkin olmadigini(enabled) dogrulayın
