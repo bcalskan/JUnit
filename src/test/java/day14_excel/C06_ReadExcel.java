@@ -2,6 +2,7 @@ package day14_excel;
 
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.FileInputStream;
@@ -39,6 +40,10 @@ public class C06_ReadExcel {
             ülkelerMap.put(key, value);
         }
         System.out.println(ülkelerMap);
+
+        //Listede Ghana oldugunu test et
+
+        Assert.assertTrue(ülkelerMap.keySet().contains("Ghana"));
 
     }
 }
