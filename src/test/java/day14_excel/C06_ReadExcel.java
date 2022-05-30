@@ -31,7 +31,7 @@ public class C06_ReadExcel {
             //key i. satirdaki 0 indexindeki datadir
             String key = workbook.getSheet("Sayfa1").getRow(i).getCell(0).toString();
 
-            //value i. satirdaki 1,2 ve 2. indexdeki datalarin birlesimidir
+            //value i. satirdaki 1,2 ve 3. indexdeki datalarin birlesimidir
             String value = workbook.getSheet("Sayfa1").getRow(i).getCell(1).toString()
                     + ", "
                     + workbook.getSheet("Sayfa1").getRow(i).getCell(2).toString()

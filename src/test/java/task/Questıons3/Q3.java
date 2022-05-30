@@ -7,6 +7,7 @@ import utilities.TestBase;
 import utilities.TestBaseClass;
 
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Q3 extends TestBaseClass {
@@ -14,24 +15,30 @@ public class Q3 extends TestBaseClass {
     //2. Iki tane metod oluşturun : isExist( ) ve downloadTest( )
     //3. downloadTest ( ) metodunun icinde aşağıdaki testi yapalim:
     //      - https://the-internet.herokuapp.com/download adresine gidelim.
-    //      - dummy.txt dosyasını indirelim
+    //      - UpFile.txt dosyasını indirelim
+    //code.txt
     //4. Ardından isExist( ) methodunda dosyanın başarıyla indirilip indirilmediğini test edelim
+
 
 
     @Test
     public void downloadTest() {
         driver.get("https://the-internet.herokuapp.com/download");
-        driver.findElement(By.xpath("//*[text()='dummy.txt']")).click();
+        driver.findElement(By.xpath("//*[text()='LambdaTest.txt']")).click();
     }
 
     @Test
     public void isExist() {
-        // "C:\Users\Berk\Desktop\dummy.txt"
+        //"C:\Users\Berk\Downloads\LambdaTest.txt"
+
+
         String farkliKisim = System.getProperty("user.home");
-        String ortakKisim = "\\Desktop\\dummy.txt";
+        System.out.println(farkliKisim);
+        String ortakKisim = "\\Downloads\\lambdaTest.txt";
+        System.out.println(ortakKisim);
+
         String path = farkliKisim + ortakKisim;
         Assert.assertTrue(Files.exists(Paths.get(path)));
 
     }
-
 }
