@@ -21,7 +21,6 @@ public class C02_ExplicitlyWait extends TestBaseImplicitly {
         //5. Enable butonuna tıklayın ve textbox etkin oluncaya kadar bekleyin
         //6. “It’s enabled!” mesajinin goruntulendigini dogrulayın.
         //7. Textbox’in etkin oldugunu(enabled) dogrulayın.
-
     }
 
     @Test
@@ -45,6 +44,5 @@ public class C02_ExplicitlyWait extends TestBaseImplicitly {
 
         //7. Textbox’in etkin oldugunu(enabled) dogrulayın.
         Assert.assertTrue(textBox.isEnabled());
-
     }
 }
